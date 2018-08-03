@@ -46,3 +46,13 @@ bot.onText(/\/pesquisa (.+)/, (msg, match) => {
     console.log('Ocorreu um erro durante a busca.')
   })
 })
+
+bot.onText(/\/regras/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(userID, message.regras, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ', ' + message.before) })
+})
+
+bot.onText(/\/desc/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(userID, message.desc, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ', ' + message.before) })
+})
