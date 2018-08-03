@@ -33,11 +33,11 @@ bot.onText(/\/pesquisa (.+)/, (msg, match) => {
 
       if (list === '') {
         const userID = msg.from.id
-        bot.sendMessage(userID, 'Não foram encontrados resultados para a pesquisa.', { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ', você precisa criar uma conversa privada comigo antes disso.') })
+        bot.sendMessage(msg.chat.id, 'Não foram encontrados resultados para a pesquisa.', { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ', você precisa criar uma conversa privada comigo antes disso.') })
 
       } else {
         const userID = msg.from.id
-        bot.sendMessage(userID, list, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ', você precisa criar uma conversa privada comigo antes disso.') })
+        bot.sendMessage(msg.chat.id, list, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ', você precisa criar uma conversa privada comigo antes disso.') })
 
       }
       console.log('Resposta Enviada.')
