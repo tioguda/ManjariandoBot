@@ -13,7 +13,7 @@ bot.on('new_chat_members', (msg) => {
   bot.sendMessage(msg.chat.id, 'Olá ' + msg.from.first_name + ',' + message.welcome)
 })
 
-bot.on('left_chat_participant', (msg) => {
+bot.on('left_chat_member', (msg) => {
   bot.sendMessage(msg.chat.id, 'Adeus ' + msg.from.first_name + ',' + message.by)
 })
 
