@@ -14,7 +14,7 @@ bot.on('new_chat_members', (msg) => {
 })
 
 bot.on('left_chat_member', (msg) => {
-  bot.sendMessage(msg.chat.id, 'Adeus ' + msg.from.first_name + ',' + message.by)
+  bot.sendMessage(userID, 'Adeus ' + msg.from.first_name + ',' + message.by)
 })
 
 bot.onText(/\/pesquisa (.+)/, (msg, match) => {
