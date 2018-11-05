@@ -1,7 +1,13 @@
 # ManjariandoBot
 
-This is the bot for Telegram of the blog [Manjariando](https://manjariando.wordpress.com).
+### Este bot para o Telegram tem a função de fazer pesquisas no blog [Manjariando](https://manjariando.wordpress.com).
+Use o comando: /pesquisa + palavras-chave
 
-## Special thanks
+### Exemplos:
+/pesquisa grub
 
-[Phelipe Wesley](https://github.com/phelipe?tab=repositories): for creating and helping put this project into action.
+/pesquisa recover grub
+
+## Agradecimentos especiais
+
+[Phelipe Wesley](https://github.com/phelipe?tab=repositories): por criar e ajudar colocar este projeto em ação.

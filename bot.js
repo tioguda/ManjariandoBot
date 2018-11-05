@@ -9,14 +9,6 @@ const assert = require('assert')
 const bot = new TelegramBot(settings.token, { polling: true })
 
 
-bot.on('new_chat_members', (msg) => {
-  bot.sendMessage(msg.chat.id, 'Olá ' + msg.from.first_name + ',' + message.welcome)
-})
-
-bot.on('left_chat_member', (msg) => {
-  bot.sendMessage(userID, 'Adeus ' + msg.from.first_name + ',' + message.by)
-})
-
 bot.onText(/\/pesquisa (.+)/, (msg, match) => {
   let text = match[1]
   text = text.replace(/ /g, '+')
@@ -45,14 +37,4 @@ bot.onText(/\/pesquisa (.+)/, (msg, match) => {
   }, (error) => {
     console.log('Ocorreu um erro durante a busca.')
   })
-})
-
-bot.onText(/\/regras/, (msg) => {
-  const userID = msg.from.id
-  bot.sendMessage(userID, message.regras, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ',' + message.before) })
-})
-
-bot.onText(/\/desc/, (msg) => {
-  const userID = msg.from.id
-  bot.sendMessage(userID, message.desc, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ',' + message.before) })
 })
