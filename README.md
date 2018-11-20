@@ -1,4 +1,4 @@
-# ManjariandoBot
+# [ManjariandoBot](https://t.me/manjariandobot)
 
 ### Este bot para o Telegram tem a função de fazer pesquisas no blog [Manjariando](https://manjariando.wordpress.com).
 Use o comando: /pesquisa + palavras-chave
