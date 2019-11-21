@@ -6,7 +6,7 @@ Use o comando: /pesquisa + palavras-chave
 ### Exemplos:
 /pesquisa grub
 
-/pesquisa recover grub
+/pesquisa recuperar grub
 
 ## Agradecimentos especiais
 
