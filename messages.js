@@ -1,3 +1,3 @@
 module.exports = {
-  before: 'você precisa criar uma conversa no privado comigo antes de usar esse comando.',
+  searcherror: 'Ocorreu um erro durante a busca, altere seu termo de pesquisa.',
 }

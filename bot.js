@@ -25,11 +25,11 @@ bot.onText(/\/pesquisa (.+)/, (msg, match) => {
 
       if (list === '') {
         const userID = msg.from.id
-        bot.sendMessage(msg.chat.id, 'Não foram encontrados resultados para a pesquisa.', { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ocorreu um erro durante a busca.') })
+        bot.sendMessage(msg.chat.id, 'Não foram encontrados resultados para a pesquisa.', { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.searcherror) })
 
       } else {
         const userID = msg.from.id
-        bot.sendMessage(msg.chat.id, list, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ocorreu um erro durante a busca.') })
+        bot.sendMessage(msg.chat.id, list, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.searcherror) })
 
       }
       console.log('Resposta Enviada.')
