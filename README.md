@@ -3,7 +3,7 @@
 ### This bot for Telegram has the function of doing research on the blog [Manjariando](https://manjariando.wordpress.com).
 Use the command: /pesquisa + keyword
 
-### Exemplos:
+### Examples:
 /pesquisa grub
 
 /pesquisa recuperar grub
