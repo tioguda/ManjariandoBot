@@ -14,7 +14,7 @@ bot.onText(/\/pesquisa (.+)/, (msg, match) => {
   text = text.replace(/ /g, '+')
   console.log('entrei aqui')
   let list = ''
-  axios.get('https://manjariando.wordpress.com/?s=' + text).then((response) => {
+  axios.get('https://manjariando.com.br/?s=' + text).then((response) => {
     if (response.status === 200) {
       const html = response.data
       const $ = cheerio.load(html)

@@ -1,6 +1,6 @@
 # [ManjariandoBot](https://t.me/manjariandobot)
 
-### This bot for Telegram has the function of doing research on the blog [Manjariando](https://manjariando.wordpress.com).
+### This bot for Telegram has the function of doing research on the blog [Manjariando](https://manjariando.com.br).
 Use the command: /pesquisa + keyword
 
 ### Examples:
