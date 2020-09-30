@@ -39,6 +39,11 @@ bot.onText(/\/pesquisa (.+)/, (msg, match) => {
   })
 })
 
+bot.onText(/\/comandos/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(msg.chat.id, message.comandos, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+})
+
 bot.onText(/\/repositorio/, (msg) => {
   const userID = msg.from.id
   bot.sendMessage(msg.chat.id, message.repositorio, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
@@ -47,4 +52,9 @@ bot.onText(/\/repositorio/, (msg) => {
 bot.onText(/\/apoiase/, (msg) => {
   const userID = msg.from.id
   bot.sendMessage(userID, message.apoiase, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+})
+
+bot.onText(/\/chavegpg/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(userID, message.chavegpg, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
