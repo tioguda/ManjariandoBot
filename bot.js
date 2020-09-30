@@ -51,10 +51,20 @@ bot.onText(/\/repositorio/, (msg) => {
 
 bot.onText(/\/apoiase/, (msg) => {
   const userID = msg.from.id
-  bot.sendMessage(userID, message.apoiase, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+  bot.sendMessage(msg.chat.id, message.apoiase, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
 
 bot.onText(/\/chavegpg/, (msg) => {
   const userID = msg.from.id
-  bot.sendMessage(userID, message.chavegpg, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+  bot.sendMessage(msg.chat.id, message.chavegpg, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+})
+
+bot.onText(/\/grub/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(msg.chat.id, message.grub, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+})
+
+bot.onText(/\/pastatmp/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(msg.chat.id, message.pastatmp, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
