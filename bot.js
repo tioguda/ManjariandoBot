@@ -62,6 +62,11 @@ bot.onText(/\/chavegpg/, (msg) => {
   bot.sendMessage(msg.chat.id, message.chavegpg, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
 
+bot.onText(/\/dualboot/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(msg.chat.id, message.dualboot, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+})
+
 bot.onText(/\/grub/, (msg) => {
   const userID = msg.from.id
   bot.sendMessage(msg.chat.id, message.grub, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
