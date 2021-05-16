@@ -8,6 +8,10 @@ const assert = require('assert')
 
 const bot = new TelegramBot(settings.token, { polling: true })
 
+bot.on('new_chat_members', (msg) => {
+  bot.sendMessage(msg.chat.id, 'Olá ' + msg.from.first_name + ',' + message.welcome)
+})
+
 bot.on('left_chat_member', (msg) => {
   bot.sendMessage(userID, 'Até a próxima ' + msg.from.first_name + '.' + message.by)
 })

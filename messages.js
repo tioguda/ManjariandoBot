@@ -1,4 +1,5 @@
 module.exports = {
+  welcome: 'Seja Bem Vindo(a) ao grupo do blog Manjariando!!!\n\nPara saber o que eu posso fazer, utilize o comando:\n/comandos\n\nVocê pode utilizar os comandos no privado se preferir algo mais particular.',
   searcherror: 'Ocorreu um erro durante a busca, altere seu termo de pesquisa.',
   repositorio: 'https://manjariando.com.br/2018/07/14/repositorio-do-blog',
   apoiase: 'https://apoia.se/manjariando',
