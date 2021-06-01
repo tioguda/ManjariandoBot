@@ -1,5 +1,5 @@
 module.exports = {
-  welcome: 'seja bem vindo(a) ao grupo do blog Manjariando!!!\n\nEu posso lhe ajudar com algumas coisas basicas, como pesquisar os artigos do blog pelo telegram, informar a URL de alguma informação pré configurada para mim, e/ou informar as regras do grupo.\n\nPara saber o que eu posso fazer, utilize o comando:\n/comandos\n\nVocê pode me chamar no privado e utilizar os comandos por lá, caso prefira algo mais particular.',
+  welcome: 'seja bem vindo(a) ao grupo do blog Manjariando!!!\n\nEu posso lhe ajudar com algumas coisas básicas, como pesquisar os artigos do blog pelo telegram, informar a URL de alguma informação pré configurada para mim, e/ou informar as regras do grupo.\n\nPara saber o que eu posso fazer, utilize o comando:\n/comandos\n\nVocê pode me chamar no privado e utilizar os comandos por lá, caso prefira algo mais particular.\n\nVocê não pode enviar mensagens que contenham links por enquanto, após algumas interações aqui no grupo isso será desbloqueado.',
   searcherror: 'Ocorreu um erro durante a busca, altere seu termo de pesquisa.',
   repositorio: 'https://manjariando.com.br/2018/07/14/repositorio-do-blog',
   apoiase: 'https://apoia.se/manjariando',
