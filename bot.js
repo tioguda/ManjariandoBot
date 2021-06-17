@@ -86,6 +86,11 @@ bot.onText(/\/branchcompare/, (msg) => {
   bot.sendMessage(msg.chat.id, message.branchcompare, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
 
+bot.onText(/\/mirrorstatus/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(msg.chat.id, message.mirrorstatus, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+})
+
 bot.onText(/\/regras/, (msg) => {
   const userID = msg.from.id
   bot.sendMessage(userID, message.regras, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, 'Ei ' + msg.from.first_name + ',' + message.before) })
