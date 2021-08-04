@@ -76,19 +76,19 @@ bot.onText(/\/grub/, (msg) => {
   bot.sendMessage(msg.chat.id, message.grub, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
 
-bot.onText(/\/pastatmp/, (msg) => {
+bot.onText(/\/tmp/, (msg) => {
   const userID = msg.from.id
-  bot.sendMessage(msg.chat.id, message.pastatmp, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+  bot.sendMessage(msg.chat.id, message.tmp, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
 
-bot.onText(/\/branchcompare/, (msg) => {
+bot.onText(/\/branch/, (msg) => {
   const userID = msg.from.id
-  bot.sendMessage(msg.chat.id, message.branchcompare, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+  bot.sendMessage(msg.chat.id, message.branch, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
 
-bot.onText(/\/mirrorstatus/, (msg) => {
+bot.onText(/\/mirrors/, (msg) => {
   const userID = msg.from.id
-  bot.sendMessage(msg.chat.id, message.mirrorstatus, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+  bot.sendMessage(msg.chat.id, message.mirrors, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
 
 bot.onText(/\/regras/, (msg) => {
