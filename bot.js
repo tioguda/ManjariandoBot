@@ -100,3 +100,8 @@ bot.onText(/\/suporte/, (msg) => {
   const userID = msg.from.id
   bot.sendMessage(msg.chat.id, message.suporte, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
 })
+
+bot.onText(/\/log/, (msg) => {
+  const userID = msg.from.id
+  bot.sendMessage(msg.chat.id, message.log, { parse_mode: 'Markdown' }).catch((error) => { bot.sendMessage(msg.chat.id, + message.before) })
+})
