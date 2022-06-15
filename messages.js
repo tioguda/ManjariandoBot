@@ -7,7 +7,7 @@ module.exports = {
   dualboot: 'https://manjariando.com.br/dual-boot-manjaro',
   grub: 'Recuperar grub EFI\nhttps://manjariando.com.br/recuperar-grub-efi\n\Recuperar grub Legacy\nhttps://manjariando.com.br/recuperar-grub-legacy',
   tmp: 'https://manjariando.com.br/nao-ha-espaco-disponivel',
-  branch: 'Manjaro\nhttps://manjaro.org/branch-compare\n\nManjariando\nhttps://branch.manjariando.com.br',
+  branch: 'Manjaro\nhttps://packages.manjaro.org\n\nManjariando\nhttps://branch.manjariando.com.br',
   mirrors: 'Manjaro\nhttps://repo.manjaro.org\n\nManjariando\nhttps://mirrors.manjariando.com.br',
   suporte: 'https://manjariando.com.br/suporte',
   log: 'https://manjariando.com.br/pedir-ajuda-corretamente',
